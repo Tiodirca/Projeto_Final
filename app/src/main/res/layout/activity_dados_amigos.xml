@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_fundo"
+    tools:context=".Controller.Amigos.DadosAmigos">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Area_dados_games"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtDadosAmigo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtDadosAmigos"
+            android:textColor="@color/detalhes"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/Area_dadosAmigo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnVoltarTela"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:onClick="sairDaTelaDadosAmigos"
+            android:layout_margin="10sp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/ic_action_voltar"
+            app:layout_constraintBottom_toTopOf="@+id/Area_dadosAmigo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.035"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <LinearLayout
+            android:id="@+id/Area_dadosAmigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp"
+            android:orientation="vertical"
+            android:paddingStart="20sp"
+            android:paddingTop="10sp"
+            android:paddingEnd="20sp"
+            android:paddingBottom="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtNickAmigo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:background="@color/cor_EditText"
+                android:text="@string/txtNick"
+                android:textColor="@color/detalhes"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/resulNick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:textColor="@color/GradienteBotaoBordas"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cor_EditText"
+                android:text="@string/txtEmail"
+                android:textColor="@color/detalhes"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/resulEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:textColor="@color/GradienteBotaoBordas"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtTel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cor_EditText"
+                android:text="@string/editTel"
+                android:textColor="@color/detalhes"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/resulTel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:textColor="@color/GradienteBotaoBordas"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/ondeJoga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtJogaOnde"
+                android:textColor="@color/detalhes"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/cbPCD"
+                android:clickable="false"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+                android:buttonTint="@color/detalhes"
+                android:text="@string/txtPC"
+                android:textColor="@color/detalhes"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:clickable="false"
+                android:id="@+id/cbConsoleD"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+                android:buttonTint="@color/detalhes"
+                android:text="@string/txtConsole"
+                android:textColor="@color/detalhes"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/cbMobileD"
+                android:clickable="false"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+                android:buttonTint="@color/detalhes"
+                android:text="@string/txtMobile"
+                android:textColor="@color/detalhes"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintBotoes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btn_atualizar"
+                    android:layout_width="300sp"
+                    android:layout_height="50sp"
+                    android:layout_marginTop="50sp"
+                    android:layout_marginBottom="10sp"
+                    android:background="@drawable/botoes_style"
+                    android:text="@string/btn_atualizar"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:onClick="atualizarDados"
+                    app:layout_constraintBottom_toTopOf="@+id/btn_excluir"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btn_excluir"
+                    android:layout_width="300sp"
+                    android:layout_height="50sp"
+                    android:background="@drawable/botoes_style"
+                    android:text="@string/btn_excluir"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:onClick="deletarAmigo"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.507"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

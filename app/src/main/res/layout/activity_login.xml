@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_fundo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Controller.Login">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="180sp"
+            android:layout_height="180sp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/imgCoroa"
+            android:src="@drawable/logo"
+            app:layout_constraintBottom_toTopOf="@+id/editUsuario"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editUsuario"
+            android:layout_width="300sp"
+            android:layout_height="40sp"
+            android:autofillHints=""
+            android:background="@color/cor_EditText"
+            android:drawableStart="@drawable/ic_action_usuario"
+            android:hint="@string/EditUsuario"
+            android:inputType="text"
+            android:textColor="@color/detalhes"
+            android:textColorHint="@color/detalhes"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/logo"
+            app:layout_constraintVertical_bias="0.402" />
+
+        <EditText
+            android:id="@+id/editSenha"
+            android:layout_width="300sp"
+            android:layout_height="40sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="158dp"
+            android:autofillHints=""
+            android:background="@color/cor_EditText"
+            android:drawableStart="@drawable/ic_action_senha"
+            android:hint="@string/EditSenha"
+            android:inputType="numberPassword"
+            android:textColor="@color/detalhes"
+            android:textColorHint="@color/detalhes"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editUsuario" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="300sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/botoes_style"
+            android:onClick="fazerLogin"
+            android:text="@string/btn_login"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toTopOf="@+id/btnCadastrar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/msgErro" />
+
+        <Button
+            android:id="@+id/btnCadastrar"
+            android:layout_width="200sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginBottom="30sp"
+            android:background="@drawable/botoes_style"
+            android:onClick="fazerCadastro"
+            android:text="@string/btn_cadastar"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.500"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+            app:layout_constraintVertical_bias="0.200" />
+
+        <TextView
+            android:id="@+id/msgErro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/violeta"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editSenha" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

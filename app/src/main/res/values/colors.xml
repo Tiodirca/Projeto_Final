@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#fc9303</color>
+
+    <color name="vermelho">#FF0000</color>
+    <color name="cor_EditText">#11000000</color>
+    <color name="magenta">#df00ff</color>
+    <color name="detalhes">#e71837</color>
+    <color name="roxo">#5a005a</color>
+    <color name="violeta">#9400d3</color>
+    <color name="amarelo">#ffce00</color>
+    <color name="cinza">#2d2d2d</color>
+
+    <!--Cor de fundo-->
+    <color name="GradienteFundoBordas">#f9eeee</color>
+    <color name="GradienteFundoMeio">#fcd7d6</color>
+
+    <!--Cor dos botao-->
+    <color name="GradienteBotaoBordas">#ed5269</color>
+    <color name="GradienteBotaoMeio">#e71837</color>
+
+    <color name="GradienteBordas">#8b008b</color>
+    <color name="GradienteMeio">#fea17d</color>
+
+    <color name="roxoGradiente">#D500F9</color>
+    <color name="roxoEscuroGradiente">#961FFF</color>
+</resources>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_fundo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Controller.Loja.DadosLoja">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Area_dados_games"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/txtDadosJogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtDadosGames"
+                android:textColor="@color/detalhes"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/Area_dadosJogo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnVoltarTela"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_margin="10sp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ic_action_voltar"
+                android:onClick="sairTelaDadosLoja"
+                app:layout_constraintBottom_toTopOf="@+id/Area_dadosJogo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.035"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <LinearLayout
+                android:id="@+id/Area_dadosJogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50sp"
+                android:orientation="vertical"
+                android:paddingStart="20sp"
+                android:paddingTop="10sp"
+                android:paddingEnd="20sp"
+                android:paddingBottom="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:context=".Controller.Usuario.DadosUsuario">
+
+                <TextView
+                    android:id="@+id/txtNomeGame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:background="@color/cor_EditText"
+                    android:text="@string/txtNomeGameAtual"
+                    android:textColor="@color/detalhes"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/resulNomeJogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="10sp"
+                    android:textColor="@color/GradienteBotaoBordas"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtDesenvolvedoraGame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cor_EditText"
+                    android:text="@string/txtDesenvolvedoraGameAtual"
+                    android:textColor="@color/detalhes"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/resulDeveloperJogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="10sp"
+                    android:textColor="@color/GradienteBotaoBordas"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtGeneroGame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cor_EditText"
+                    android:text="@string/txtGeneroGameAtual"
+                    android:textColor="@color/detalhes"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/resulGeneroJogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="10sp"
+                    android:textColor="@color/GradienteBotaoBordas"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtDescricaoJogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cor_EditText"
+                    android:text="@string/txtDescricaoJogoDados"
+                    android:textColor="@color/detalhes"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/resulDescricaoJogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="10sp"
+                    android:textColor="@color/GradienteBotaoBordas"
+                    android:textSize="20sp" />
+
+
+                <CheckBox
+                    android:id="@+id/cbMultiPlataforma"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10sp"
+                    android:buttonTint="@color/detalhes"
+                    android:clickable="false"
+                    android:text="@string/txtMultiPlataformaGame"
+                    android:textColor="@color/detalhes"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/cbSuporteOnline"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10sp"
+                    android:buttonTint="@color/detalhes"
+                    android:clickable="false"
+                    android:text="@string/txtOnlineGame"
+                    android:textColor="@color/detalhes"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtPreco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cor_EditText"
+                    android:text="@string/txtPrecoGameAtual"
+                    android:textColor="@color/detalhes"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/resulPrecoJogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="10sp"
+                    android:textColor="@color/GradienteBotaoBordas"
+                    android:textSize="20sp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintBotoes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/btn_atualizar"
+                        android:layout_width="300sp"
+                        android:layout_height="50sp"
+                        android:layout_marginBottom="10sp"
+                        android:background="@drawable/botoes_style"
+                        android:onClick="comprarJogo"
+                        android:text="@string/btn_comprar"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

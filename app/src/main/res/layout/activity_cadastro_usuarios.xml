@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_fundo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Controller.Usuario.CadastroUsuarios">
+
+        <TextView
+            android:id="@+id/txtCadastroUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtCadastrarUsuario"
+            android:textColor="@color/detalhes"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/Area_cadastro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnVoltarTela"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_margin="10sp"
+            android:background="@drawable/ic_action_voltar"
+            android:onClick="sairDaTelaCadastrarUsuario"
+            app:layout_constraintBottom_toTopOf="@+id/Area_cadastro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.018"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.8" />
+
+        <LinearLayout
+            android:id="@+id/Area_cadastro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="40sp"
+            android:layout_marginTop="60sp"
+            android:layout_marginEnd="40sp"
+            android:layout_marginBottom="150sp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/EditUsuarioCad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="20sp"
+                android:autofillHints=""
+                android:background="@color/cor_EditText"
+                android:hint="@string/EditUsuario"
+                android:inputType="text"
+                android:textColor="@color/detalhes"
+                android:padding="10sp"
+                android:paddingTop="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtIdade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="10sp"
+                android:paddingEnd="10sp"
+                android:text="@string/txtIdade"
+                android:textColor="@color/detalhes"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/seekBarIdade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="30sp"
+                android:max="100"
+                android:progressTint="@color/detalhes"
+                android:thumbTint="@color/detalhes" />
+
+            <TextView
+                android:id="@+id/ResultadoIdade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20sp"
+                android:textColor="@color/detalhes"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/EditSenhaCad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:textColor="@color/detalhes"
+                android:background="@color/cor_EditText"
+                android:hint="@string/EditSenha"
+                android:inputType="numberPassword"
+                android:padding="10sp"
+                android:paddingTop="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtSexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:paddingStart="10sp"
+                android:paddingEnd="10sp"
+                android:text="@string/txtSexo"
+                android:textColor="@color/detalhes"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/Area_sexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/masculino"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/GradienteBotaoMeio"
+                    android:text="@string/txtMasculino"
+                    android:textColor="@color/detalhes"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/feminino"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/GradienteBotaoMeio"
+                    android:text="@string/txtFeminino"
+                    android:textColor="@color/detalhes"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="10sp"
+                    android:progressTint="@color/detalhes"
+                    android:visibility="invisible" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCadastrar"
+            android:layout_width="300sp"
+            android:layout_height="50sp"
+            android:background="@drawable/botoes_style"
+            android:onClick="cadastrar"
+            android:text="@string/txtCadastrarUsuario"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Area_cadastro" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

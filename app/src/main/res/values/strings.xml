@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">Projeto Final</string>
+
+    <!--Strings da tela de Login e Cadastro-->
+    <string name="EditUsuario">Usuario</string>
+    <string name="EditSenha">Senha</string>
+    <string name="btn_login">Fazer Login</string>
+    <string name="btn_cadastar">Cadastrar</string>
+
+    <!--Strings da tela de Cadastro de Usuarios-->
+    <string name="txtIdade">Idade:</string>
+    <string name="txtCadastrarUsuario">Cadastrar Usuario</string>
+    <string name="txtMasculino">Masculino</string>
+    <string name="txtFeminino">Feminino</string>
+    <string name="txtSexo">Sexo:</string>
+
+    <!--Strings da tela de Dados Usuario-->
+    <string name="txtDadosUsuarios">Dados do Usuario</string>
+    <string name="txtNomeUsuario">Nome de Usuario:</string>
+    <string name="txtSenha">Senha:</string>
+    <!--Strings dos Botoes-->
+    <string name="btn_atualizar">Atualizar</string>
+    <string name="btn_excluir">Excluir</string>
+
+    <!--Strings da tela de Atualizacao de usuario-->
+    <string name="txtAtualizarUsuario">Atualizar Usuario</string>
+
+    <!--Strings dos TextViews-->
+    <string name="txtListaUsuarios">Lista de Usuarios</string>
+    <!--Strings das descricoes das imagens-->
+    <string name="imgLista">Imagem de uma lista</string>
+    <string name="imgCoroa">Imagem de uma Coroa</string>
+    <string name="imgControle">Imagem de um Controle videogame</string>
+    <string name="imgLoja">Imagem do icone de loja</string>
+    <string name="imgComunidade">Imagem de conversa</string>
+
+    <!--Strings da tela HOME SCREEN-->
+    <string name="txtListas">Lista Amigos e Biblioteca</string>
+    <string name="txtLoja">Loja</string>
+    <string name="txtComunidade">Comunidade</string>
+    <string name="sair">Sair</string>
+
+
+    <string name="txtListaBiblioteca">Biblioteca</string>
+    <string name="txtListaAmigos">Amigos</string>
+    <string name="cadJogos">Cadastrar Jogo</string>
+
+    <string name="txtDadosAmigos">Dados do Amigo</string>
+
+    <!--Strings da tela de CADASTRO DE JOGOS-->
+    <string name="txtNomeGame">Nome do jogo</string>
+    <string name="txtDesenvolvedoraGame">Desenvolvedora do jogo</string>
+    <string name="txtGeneroGame">Genero do jogo</string>
+    <string name="txtMultiPlataformaGame">Multi Plataforma</string>
+    <string name="txtOnlineGame">Suporte a Online</string>
+    <string name="txtPrecoGame">Preço do jogo</string>
+    <string name="NAO">NÃO</string>
+    <string name="txtListaJogos">Jogos Favoritos</string>
+    <string name="txtDescricaoJogo">Descricao do Jogo</string>
+
+    <string name="txtDadosGames">Dados do Jogo</string>
+
+    <!--Strings da tela de ATUALIZACAO DE DADOS DE JOGOS-->
+    <string name="txtNomeGameAtual">Nome do jogo:</string>
+    <string name="txtDesenvolvedoraGameAtual">Desenvolvedora do jogo:</string>
+    <string name="txtGeneroGameAtual">Genero do jogo:</string>
+    <string name="txtPrecoGameAtual">Preço do jogo:</string>
+    <string name="txtDescricaoJogoDados">Descricao do Jogo:</string>
+
+
+    <!--Strings da tela de CADASTRO  DE AMIGOS-->
+    <string name="txtCadAmigos">Cadastro de Amigos</string>
+    <string name="editNick">NickName</string>
+    <string name="editTel">Telefone</string>
+    <string name="editEmail">Email</string>
+    <string name="txtJogaOnde">Qual plataforma Joga ?</string>
+    <string name="txtPC">PC</string>
+    <string name="txtConsole">Console</string>
+    <string name="txtMobile">Mobile</string>
+    <string name="btn_adiconar">Adicionar Amigo a lista</string>
+
+    <!--Strings da tela de ATUALIZACAO DE AMIGOS-->
+    <string name="txtAttAmigo">Atualizar Dados do Amigo</string>
+    <string name="txtNick">NickName:</string>
+    <string name="txtTel">Telefone:</string>
+    <string name="txtEmail">Email:</string>
+    <string name="config">Configurações</string>
+    <!--Strings da tela de Lista Jogos Loja-->
+
+    <string name="btn_comprar">Comprar Jogo</string>
+    <string name="orientacao">Clique no Card Roxo para ver mais Detalhes</string>
+    <!--Strings da tela de Cadastro Loja-->
+    <string name="txtCadLoja">Cadastrar Jogos na Loja</string>
+</resources>

@@ -1,2 +1,2 @@
 # Projeto_Final
-Projeto desenvolvido para a disciplina de Desenvolvimento de aplicações para dispositivos moveis 
+Projeto desenvolvido para a disciplina de Desenvolvimento de aplicações para dispositivos moveis 5 Periodo
